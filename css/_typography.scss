@@ -232,10 +232,14 @@ figcaption {
 table {
     margin-bottom: 1.5em;
 }
-thead {font-weight: bold;}
-thead td {background-color: #efefef;}
+thead {}
+thead th {}
 
-td {padding: 8px; border: #ccc 1px solid;}
+td, th {
+	padding: .5em;
+	border: #ccc 1px solid;
+	vertical-align: middle;
+}
 
 
 // Misc
@@ -246,7 +250,6 @@ hr {
   height: 0; 
   overflow: visible;
 }
-
 
 
 /* ------------------------------

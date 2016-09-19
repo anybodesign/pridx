@@ -154,33 +154,24 @@ input[type="submit"]:hover {
 	border-radius: 100%;
 }
 
-.formfield-radio input[type="radio"] + label:after,
-.formfield-radio input[type="radio"] + label:after {
+.formfield-radio input[type="radio"]:checked + label:after,
+.formfield-radio input[type="radio"]:checked + label:after {
 	content: ""; vertical-align: middle;
 	display: inline-block;
 	position: absolute; top: 0; left: 0;
 }
 
-.formfield-radio input[type="radio"] + label:after {
+.formfield-radio input[type="radio"]:checked + label:after {
 	width: 10px; height: 10px;
 	background-color: #444;
 	top: 6px; left: 6px;
 	border-radius: 100%;
-	opacity: 0;
-	transition: opacity .2s linear;
-}
-.formfield-radio input[type="radio"]:checked + label:after {
-	opacity: 1;
 }
 
-.formfield-checkbox input[type="checkbox"] + label:after {
+.formfield-checkbox input[type="checkbox"]:checked + label:after {
 	position: absolute; top: 0; left: 4px;
 	content: "\2714"; 
-	opacity: 0;
-	transition: opacity .2s linear;
-}
-.formfield-checkbox input[type="checkbox"]:checked + label:after {
-	opacity: 1;
+	//content: "+"; transform: rotate(45deg);
 }
 
 
@@ -207,10 +198,12 @@ input[type="submit"]:hover {
 	border-style: solid;
 }
 .formfield-select--container select {
-	width: 110%; height: auto;
+	width: 90%; height: auto;
 	border: 0; margin: 0;
 	border-radius: 0;
 	appearance: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .formfield-select--container select::-ms-expand {
     display: none;
