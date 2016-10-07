@@ -5,10 +5,17 @@ Prid'x : Anybodesign's Responsive Flexboxed Padding Grid
 
 
 
+--- v1.2 - 2017, October, 6th ------------------------
+
+
+- Enhanced: Forms - Custom select
+
+
+
 --- v1.1 - 2017, September, 10th ------------------------
 
 
-- New Breakpoints
+- Enhanced: New Breakpoints
 
 
 
