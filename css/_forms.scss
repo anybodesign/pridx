@@ -175,10 +175,10 @@ input[type="submit"]:hover {
 }
 
 .formfield-checkbox input[type="checkbox"] + label:after {
-	position: absolute; top: 0; left: 4px;
-	content: "\2714";
+	position: absolute; top: -2px; left: 6px;
+	content: "L";
+	transform: scaleX(-1) rotate(-45deg);
 	color: #444; 
-	//content: "+"; transform: rotate(45deg);
 	opacity: 0;
 	transition: opacity .2s linear;
 }
