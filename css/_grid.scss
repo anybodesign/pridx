@@ -35,7 +35,16 @@ $width-wide: 80em;	 		// @note: 1280px
 	&.x-between  {justify-content: space-between;}
 	&.x-around   {justify-content: space-around;}
 	
+	
+	// Row For Nested columns
+
+	&.nested {
+		margin-left: -$grid-padding;
+		margin-right: -$grid-padding;
+		margin-bottom: $grid-padding;
+	}
 }
+
 
 [class*="col-"] {
     flex-shrink: 0;
@@ -67,10 +76,16 @@ $width-wide: 80em;	 		// @note: 1280px
 	width: 100%;
 }
 
+
 // Filling
 
 .col-0 {
-	flex-grow: 1; 
+	width: 100%;
+		
+	@media screen and (min-width: $width-large) {
+		width: auto;
+		flex-grow: 1;
+	} 
 }
 
 
