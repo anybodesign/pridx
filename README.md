@@ -7,6 +7,9 @@ Check the [Demo page](https://lab.anybodesign.com/pridx "Demo page of Prid'x").
 ## Usage
 
 Prid’x is based on a 12 columns layout. The gutters are managed with the columns' padding.
+
+### Layout
+
 Build your grids with `.row` and `.col-x` elements. For example:
 
 ```html
@@ -18,6 +21,8 @@ Build your grids with `.row` and `.col-x` elements. For example:
 </div>	
 ```
 
+### Mixed Widths
+
 Columns can be set to a different width under a particular breakpoint. For example, use the class `small-6` to set the width of the column to 50% for small widths. For medium widths you can use `mid-6`. Breakpoints can of course be customized.
 
 ```html
@@ -26,6 +31,8 @@ Columns can be set to a different width under a particular breakpoint. For examp
 	<div class="col-3 mid-6 small-8"></div>
 </div>
 ```
+
+### Nesting
 
 Nesting is possible with the class `.nested`
 
@@ -49,6 +56,8 @@ Nesting is possible with the class `.nested`
 
 ```
 
+### Offsets
+
 You can add some left or right margins if needed. For example, add the class `.left-1` if you want a 1 column left margin, or `.right-2` if you want a 2 columns right-margin.
 
 ```html
@@ -58,7 +67,9 @@ You can add some left or right margins if needed. For example, add the class `.l
 
 ```
 
-No padding! Get rid of the margins with the class `.no-padding`
+### No padding! 
+
+Get rid of the margins with the class `.no-padding`
 
 ```html
 
@@ -66,25 +77,34 @@ No padding! Get rid of the margins with the class `.no-padding`
 
 ```
 
-And… Flexbox magic :) Use extra classes on `.row` elements:
+### Flexbox magic :)
+
+Use extra classes on `.row` elements:
 
 `.x-top` for align-items: flex-start
+
 `.x-middle` for align-items: center
+
 `.x-bottom` for align-items: flex-end
+
 `.x-stretch` for align-items: stretch
+
 `.x-baseline` for align-items: baseline
 	
 `.x-left` for justify-content: flex-start
+
 `.x-center` for justify-content: center
+
 `.x-right` for justify-content: flex-end
+
 `.x-between` for justify-content: space-between
+
 `.x-around` for justify-content: space-around
 
-Thanks!
 
 
 
-### ChangeLog
+## ChangeLog
 
 **v1.7** - 2017, May 12th
 
