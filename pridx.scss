@@ -34,6 +34,7 @@ $width-wide: 80em;	 		// @note: 1280px
 	&.x-bottom   {align-items: flex-end;}
 	&.x-stretch  {align-items: stretch;}
 	&.x-baseline {align-items: baseline;}
+	
 	&.x-left     {justify-content: flex-start;}
 	&.x-center   {justify-content: center;}
 	&.x-right    {justify-content: flex-end;}
