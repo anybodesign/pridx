@@ -1,9 +1,14 @@
-/* -------------------
-//
-//  The Padding Grid
-// 
-// ------------------- */
-
+@charset "UTF-8";
+/*!
+   ----------------------------------------------------------
+	Prid'x: Anybodesign's Responsive Flexed Based Padding Grid
+	Author: Thomas Villain at Anybodesign Workshop
+	Url: https://anybodesign.com/
+	Project Url: https://lab.anybodesign.com/pridx/
+	License: WTFPL http://www.wtfpl.net/
+	Version: 1.7
+   ----------------------------------------------------------
+*/
 
 // Some Variables
 
@@ -41,6 +46,7 @@ $width-wide: 80em;	 		// @note: 1280px
 	&.nested {
 		margin-left: -$grid-padding;
 		margin-right: -$grid-padding;
+		margin-top: -$grid-padding;
 		margin-bottom: $grid-padding;
 	}
 }
@@ -49,15 +55,7 @@ $width-wide: 80em;	 		// @note: 1280px
 [class*="col-"] {
     flex-shrink: 0;
     padding: $grid-padding;
-
-	
-	// Parent For Nested columns
-	
-	&.colparent {
-		@extend .row;
-		padding: 0;
-	}
-
+	box-sizing: border-box;
 	
 	// No Padding 
 	
@@ -181,5 +179,5 @@ $width-wide: 80em;	 		// @note: 1280px
 	.right-9 {margin-right: 75%;}
 	.right-10 {margin-right: 83.3333%;}
 	.right-11 {margin-right: 91.6667%;}
-	
+
 }
